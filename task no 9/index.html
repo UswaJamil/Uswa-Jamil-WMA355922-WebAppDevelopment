@@ -1,0 +1,64 @@
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task9</title>
+</head>
+<body>
+ <h2>Our Products</h2>
+  <div class="card-container"></div>
+<script src="./task9.js"></script>  
+</body>
+</html>
+
+    
+
+    <script>
+
+let products = [
+  {
+    id: 1,
+    name: "Product no 01",
+    description: "High-quality product with modern features.",
+    price: 29.99,
+    currency: "USD",
+    inStock: true,
+    category: "Electronics",
+    tags: ["gadget", "tech", "new"],
+    createdAt: "2025-05-16T10:00:00Z",
+    updatedAt: "2025-05-16T10:00:00Z"
+  },
+  {
+    id: 2,
+    name: "Product no 02",
+    description: "Durable and affordable item for everyday use.",
+    price: 15.50,
+    currency: "USD",
+    inStock: false,
+    category: "Home & Kitchen",
+    tags: ["kitchen", "daily-use"],
+    createdAt: "2025-05-15T12:30:00Z",
+    updatedAt: "2025-05-15T12:30:00Z"
+  }
+];
+let container = document.getElementsByClassName("card-container")[0];
+
+products.map(function(product) {
+  let card = `
+    <div style="border:1px solid #ccc; padding:10px; margin:10px;">
+      <h3>${product.name}</h3>
+      <p>${product.description}</p>
+      <p>Price: ${product.price} ${product.currency}</p>
+      <p>Category: ${product.category}</p>
+    </div>
+  `;
+  container.innerHTML += card;
+});
+
+
+    </script>
+</body>
+
+</html>
