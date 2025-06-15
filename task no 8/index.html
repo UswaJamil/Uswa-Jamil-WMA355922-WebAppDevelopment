@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+     <!-- function capitalizeFirstLetter(str) {
+     return str.charAt(0).toUpperCase() + str.slice(1);
+   }
+
+   const myString = "hello world";
+   const capitalizedString = capitalizeFirstLetter(myString);
+   console.log(capitalizedString); // Output: "Hello world" -->
+
+
+
+<p id="demo"></p>
+
+<script>
+     function capitalizeFirstLetter(str) {
+     return str.charAt(0).toUpperCase() + str.slice(1);
+   }
+
+const text= "how are you!";
+const captilize = capitalizeFirstLetter(text);
+console.log(captilize);
+  function slice(str) {
+     return str .slice(1,5);
+   }
+ const word= "HelloWorld"
+ const sliced= slice(word)
+ console.log(sliced);
+    const str = "code";
+   for (let i = 0; i < str.length; i++) {
+     console.log(str[i]);
+   }
+   function getLastNCharacters(str, n) {
+  if (n > str.length) {
+    return str;
+  }
+  return str.slice(-n);
+}
+   let words= "developer"
+let lastfour = getLastNCharacters(words,4); 
+console.log (lastfour);
+function countWords(sentence) {
+  
+
+  
+  
+  return sentence.split(/\s+/).length;
+}
+const sentence = "JavaScript is fun to learn";
+const wordCount = countWords(sentence);
+console.log(wordCount); 
+
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
