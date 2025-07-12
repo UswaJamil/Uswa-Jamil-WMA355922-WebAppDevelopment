@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // spreadExamples.js
+
+// Spread with STRING
+const name = "John";
+const nameChars = [...name];
+console.log(nameChars); // ['J', 'o', 'h', 'n']
+
+// Spread with ARRAY
+const nums1 = [1, 2, 3];
+const nums2 = [4, 5];
+const allNums = [...nums1, ...nums2];
+console.log(allNums); // [1, 2, 3, 4, 5]
+
+// Spread with OBJECT
+const person = { name: "Alice", age: 25 };
+const employee = { ...person, job: "Engineer" };
+console.log(employee); // { name: 'Alice', age: 25, job: 'Engineer' }
+
+    </script>
+</body>
+</html>
